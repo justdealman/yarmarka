@@ -790,7 +790,7 @@ if ( $('.scheme').length > 0 ) {
 				}
 				if ( paths[arr[this.id]].tip ) {
 					var point = this.getBBox(0);
-					var t = $('.bubble');
+					var t = $('.bubble[data-shop="'+paths[arr[this.id]].space+'"]');
 					t.removeClass('right');
 					t.css({
 						'left': (point.x+point.x2)/2+current.offset().left+'px',
